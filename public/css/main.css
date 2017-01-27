@@ -302,7 +302,7 @@ hr.vertical {
 
 /* modal settings*/
     #myModal {
-        display: block;
+        display: none;
         position: fixed;
         /*
         top:25%;
