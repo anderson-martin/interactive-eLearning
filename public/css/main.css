@@ -318,39 +318,7 @@ hr.vertical {
         background-color: rgba(0, 0, 0, 0);
 
     }
-/*
-@media (min-width: 768px) {
-    #myModal {
-        display: block;
-        position: fixed;
-        left: 0;
 
-        z-index: 1;
-        padding: inherit;
-        -webkit-border-radius: 38px 0 38px 0;
-        -moz-border-radius: 38px 0 38px 0;
-        border-radius: 38px 0 38px 0;
-        background-color: rgba(0, 0, 0, 0);
-        background-color: pink;
-    }
-}
-
-@media (max-width: 768px) {
-    .mymodal {
-        display: block;
-        position: fixed;
-        z-index: 1;
-        display: none;
-        overflow: auto;
-        padding: inherit;
-        -webkit-border-radius: 38px 0 38px 0;
-        -moz-border-radius: 38px 0 38px 0;
-        border-radius: 38px 0 38px 0;
-
-        background-color: rgba(0, 0, 0, 0);
-    }
-}
-*/
 .ui-state-highlight {
     border: 0;
 }
@@ -403,10 +371,7 @@ hr.vertical {
     overflow:auto;
 }
 
-@media (min-width: 768px) {
-  
 
-}
 
 #fixedOrangeBg {
     margin: 0;
