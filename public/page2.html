@@ -41,134 +41,42 @@
         <div>
             <hr class="vertical">
             <hr class="horizontal"> </div>
-        <!-- here are four columns and explanations are located -->
+        <!-- here are four columns and explanations are located. They are being injected by jQuery codes written in the file js/functions.js -->
+
         <div id="fourth" class="row">
-            <div id="component0" class="col-md-3 col-sm-12 col-xs-12 component droppable left">
-                <hr class="vertical">
-                <!-- "bg" stands for "background" -->
-                <div class="bg-placeholder">
-                    <div id="placeholder0" class="placeholder"> </div>
-                    <div id="retunedAnswer0" class="retunedAnswer row" style="display:none;">
-                        <div class="col-md-4 col-sm-4 col-xs-4"><span class="fa-stack fa-lg">
-<i class="fa fa-circle fa-stack-2x white" aria-hidden="true"></i>
-  <i class="fa fa-plus-circle fa-stack-2x black"></i>
-</span></div>
-                        <div class="col-md-6 col-sm-6 col-xs-6 left answer0"> </div>
-                    </div>
-                </div>
-                <div class="bg-description">
-                    <div class="description desc0"> </div>
-                </div>
-            </div>
-            <div id="component1" class="col-md-3 col-sm-12 col-xs-12 component droppable left">
-                <hr class="vertical">
-                <div class="bg-placeholder">
-                    <div id="placeholder1" class="placeholder"> </div>
-                    <div id="retunedAnswer1" class="retunedAnswer row" style="display:none;">
-                        <div class="col-md-4 col-sm-4 col-xs-4"><span class="fa-stack fa-lg">
-<i class="fa fa-circle fa-stack-2x white" aria-hidden="true"></i>
-  <i class="fa fa-plus-circle fa-stack-2x black"></i>
-</span></div>
-                        <div class="col-md-6 col-sm-6 col-xs-6 left answer3"> </div>
-                    </div>
-                </div>
-                <div class="bg-description">
-                    <div class="description desc1"> </div>
-                </div>
-            </div>
-            <div id="component2" class="col-md-3 col-sm-12 col-xs-12 component droppable left">
-                <hr class="vertical">
-                <div class="bg-placeholder">
-                    <div id="placeholder2" class="placeholder"> </div>
-                    <div id="retunedAnswer2" class="retunedAnswer row" style="display:none;">
-                        <div class="col-md-4 col-sm-4 col-xs-4"><span class="fa-stack fa-lg">
-<i class="fa fa-circle fa-stack-2x white" aria-hidden="true"></i>
-  <i class="fa fa-minus-circle fa-stack-2x red"></i>
-</span></div>
-                        <div class="col-md-6 col-sm-6 col-xs-6 left answer1"> </div>
-                    </div>
-                </div>
-                <div class="bg-description">
-                    <div class="description desc2"> </div>
-                </div>
-            </div>
-            <div id="component3" class="col-md-3 col-sm-12 col-xs-12 component droppable left">
-                <hr class="vertical">
-                <div class="bg-placeholder">
-                    <div id="placeholder3" class="placeholder"> </div>
-                    <div id="retunedAnswer3" class="retunedAnswer row" style="display:none;">
-                        <div class="col-md-4 col-sm-4 col-xs-4"><span class="fa-stack fa-lg">
-<i class="fa fa-circle fa-stack-2x white" aria-hidden="true"></i>
-  <i class="fa fa-minus-circle fa-stack-2x red"></i>
-</span></div>
-                        <div class="col-md-6 col-sm-6 col-xs-6 left answer2"> </div>
-                    </div>
-                </div>
-                <div class="bg-description">
-                    <div class="description desc3"> </div>
-                </div>
-            </div>
+
         </div>
-        <!-- todo: class and id of each answer is different. try to solve it -->
         <div class="row">
-            <div class="empty col-md-1 col-sm-1 col-xs-1"></div>
-            <div id="answersRow" class="col-md-10 col-sm-10 row">
-                <div class="bg-answer-down col-md-3 col-sm-12 col-xs-12 ">
-                    <div class="bg-grey">
-                        <div id="answer0" class="draggable ui-widget-content answer-down center">
-                            <p class="answer0"> </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="bg-answer-down col-md-3 col-sm-12 col-xs-12 ">
-                    <div class="bg-grey">
-                        <div id="answer2" class=" draggable  ui-state-highlight answer-down center">
-                            <p class="answer1"> </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="bg-answer-down col-md-3 col-sm-12 col-xs-12 ">
-                    <div class="bg-grey">
-                        <div id="answer3" class="draggable  ui-widget-content answer-down center">
-                            <p class="answer2"> </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="bg-answer-down col-md-3 col-sm-12 col-xs-12 ">
-                    <div class="bg-grey">
-                        <div id="answer1" class="draggable ui-widget-content answer-down center">
-                            <p class="answer3"> </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-1 col-sm-1 col-xs-1"> <a class="white" href="index.html"><i id="nextBtnP2"  style="display:none;" class="fa fa-chevron-circle-right fa-4x nextBtn darkgreen"  aria-hidden="true"></i></a> </div>
+        <div class="empty col-md-1 col-sm-1 col-xs-1"></div>
+        <div id="answersRow" class="col-md-10 col-sm-10 row">
+            <!-- here are four choices (answers) located. They are being injected by jQuery codes written in the file js/functions.js -->
+
         </div>
-        <!-- The Modal
-question: how to divid height of mymodal-body equally between #questionArea and #answerArea ? i want them to be responsive and have a responsive min-height.
-what#s the best responide-design practice in such situations? 
--->
-        <div id="myModal" class="offset-md-3 col-md-6 col-sm-12 col-xs-12">
-            <div class="mymodal-content">
-                <div class="mymodal-body">
-                    <div id="questionArea">
-                        <div id="upperPart">
-                            <p id="question" class="col-md-12 col-sm-12 col-xs-12"> </p>
-                        </div>
-                        <div id="btnArea">
-                            <button type="button" class="btn btn-default" id="trueBtn" onclick="dialogsLogic().showTrue()">True</button>
-                            <p id="textInBetween"> OR </p>
-                            <button type="button" class="btn btn-default" id="falseBtn" onclick="dialogsLogic().showFalse()">False</button>
-                        </div>
+        <div class="col-md-1 col-sm-1 col-xs-1"> <a class="white" href="index.html"><i id="nextBtnP2"  style="display:none;" class="fa fa-chevron-circle-right fa-4x nextBtn darkgreen"  aria-hidden="true"></i></a> </div>
+        
+    </div>
+    <!-- The Modal dialog  -->
+    <div id="myModal" class="offset-md-3 col-md-6 col-sm-12 col-xs-12">
+        <div class="mymodal-content">
+            <div class="mymodal-body">
+                <div id="questionArea">
+                    <div id="upperPart">
+                        <p id="question" class="col-md-12 col-sm-12 col-xs-12"> </p>
                     </div>
-                    <div id="answerArea" class="col-md-12 col-sm-12 col-xs-12">
-                        <p id="trueAnswer"> </p>
-                        <p id="wrongAnswer"> </p> <i id="nextBtn-dialog" class="fa-stack fa-2x" style="display:none" onclick="dialogsLogic().nextPage()">
+                    <div id="btnArea">
+                        <button type="button" class="btn btn-default" id="trueBtn" onclick="dialogsLogic().showTrue()">True</button>
+                        <p id="textInBetween"> OR </p>
+                        <button type="button" class="btn btn-default" id="falseBtn" onclick="dialogsLogic().showFalse()">False</button>
+                    </div>
+                </div>
+                <div id="answerArea" class="col-md-12 col-sm-12 col-xs-12">
+                    <p id="trueAnswer"> </p>
+                    <p id="wrongAnswer"> </p> <i id="nextBtn-dialog" class="fa-stack fa-2x" style="display:none" onclick="dialogsLogic().nextPage()">
 <i class="fa fa-circle fa-stack-2x lightgreen" aria-hidden="true"></i> <i class="fa fa-chevron-circle-right fa-stack-2x white"></i> </i>
-                    </div>
                 </div>
             </div>
         </div>
+    </div>
     </div>
 </body>
 

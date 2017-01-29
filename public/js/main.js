@@ -2,16 +2,8 @@ $(document).ready(function () {
     var fillPage = function () {
         var choices = getContent().choices;
         var descriptions = getContent().descriptions;
-        var funcs4SectionFourth = getFuncs().funcs4SectionFourth;
         var headerP2 = getContent().headerP2;
         var headerP1 = getContent().headerP1;
-        /* due to hoisting, variables are being declared at the beginning but they dont instantiate. so, how comes that we can use function expression like following:
-                
-                func();
-                function(){};
-                
-                it shouldnt be possible! */
-        /*fillFuncs4SectionFourth();*/
         fillDescriptions();
         fillAnswers();
         fillHeaderP2();
@@ -59,27 +51,31 @@ $(document).ready(function () {
             accept: '#answer0'
             , drop: function () {
                 myVars.index = 0;
+                myVars.index2 = 0;
                 dialogsLogic().starter();
             }
         });
         $("#component1").droppable({
-            accept: '#answer1'
+            accept: '#answer3'
             , drop: function () {
                 myVars.index = 1;
+                myVars.index2 = 3;
                 dialogsLogic().starter();
             }
         });
         $("#component2").droppable({
-            accept: '#answer2'
+            accept: '#answer1'
             , drop: function () {
                 myVars.index = 2;
+                myVars.index2 = 1;
                 dialogsLogic().starter();
             }
         });
         $("#component3").droppable({
-            accept: '#answer3'
+            accept: '#answer2'
             , drop: function () {
                 myVars.index = 3;
+                myVars.index2 = 2;
                 dialogsLogic().starter();
             }
         });
@@ -89,26 +85,22 @@ $(document).ready(function () {
             "class": "col-md-3 col-sm-12 col-xs-12 component droppable left"
             , id: "component5"
         });
-        /* ?? question: why following jquery doesnt instantiate? 
-                $("#fourth").append(component0);
-                                $("#component").append(component0);
-                console.log('this is component5' + component0);
-*/
-        /*if i put content of the start functions directly in  $(document).ready(function (), it doesnt work, why? They should all be loaded!*/
+
         fillPage();
         DragDropping();
     });
-    //?? why the current structure works fine? It shouldn't! Following functions are defined within scope of the anon function (initialized after document ready). And these functions don#t have global scope (havent attached them with window object). so how comes that i can call them easily and eveything works fine?
+
     $(myVars = {
         i: 0
         , index: NaN
         , answered: 0
+        , index2: NaN
     });
     $(dialogsLogic = function () {
         var BtnIsOff = true;
         var dialogs = getContent().dialogs;
         var starter = function () {
-            document.getElementById("answer" + myVars.index).style.display = "none";
+            document.getElementById("answer" + myVars.index2).style.display = "none";
             dialogsLogic().runModal();
             myVars.i = 0;
             dialogsLogic().showQuestion();

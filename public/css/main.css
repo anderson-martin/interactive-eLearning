@@ -6,10 +6,6 @@
 }
 
 .body {
-    /*
-    width: auto !important;
-    width: 768px;
-    min-width: 768px; */
     /* to ensure icons are aligned well*/
     height: 100%;
 }
@@ -247,7 +243,6 @@ hr.vertical {
 }
 
 .bg-description {
-    height: 340px;
     margin-top: 0;
     padding: 5px;
     -webkit-border-radius: 0 0 30px 0;
@@ -460,3 +455,7 @@ hr.vertical {
     margin-bottom: 20px;
 }
 
+
+#question {
+    text-align: left;
+}
