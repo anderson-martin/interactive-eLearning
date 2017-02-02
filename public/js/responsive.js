@@ -50,12 +50,16 @@ $(document).ready(function () {
         }
 
         function resize_bg_description() {
+            var bg_descriptionSize;
             if (widthWindow >= 768) {
-                var temp = findTallestColumn();
-                bg_descriptionSize = temp;
+                /* first loop is to fix resizing bug */
+                for (var i = 0; i < bg_descriptions.length; i++) {
+                    bg_descriptions[i].style.height = "100%";
+                }
+                bg_descriptionSize = findTallestColumn();
                 for (var i = 0; i < bg_descriptions.length; i++) {
                     bg_descriptions[i].style.height = bg_descriptionSize + "px";
-                };
+                }
             }
             else {
                 for (var i = 0; i < bg_descriptions.length; i++) {
