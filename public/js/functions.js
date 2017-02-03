@@ -35,7 +35,7 @@
                        , "class": "retunedAnswer row"
                    }).hide();
                    var answer_x = $("<div></div>", {
-                       "class": "col-md-6 col-sm-6 col-xs-6 left answer" + neededAnswer
+                       "class": "col-md-8 col-sm-8 col-xs-8 left answer" + neededAnswer
                    });
                    if ((i === 1) || (i === 0)) {
                        var bg_placeholder = $("<div></div>", {
