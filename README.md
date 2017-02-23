@@ -1,7 +1,7 @@
 # interactive-eLearning
 
 
-I created an interactive & responsive eLearning application with JavaScript. Eventhough,  this app is tiny but it's highly interactive and it took me some time to create it. You can see it live in here: http://interactive-elearning.herokuapp.com
+I created an interactive & responsive eLearning application with JavaScript. Eventhough,  this app is tiny but it's highly interactive and it took me some time to create it. You can see it live under following link (please use Google Chrome to get best result) : http://interactive-elearning.herokuapp.com
 
 With help of this app, users should fill out the blank spaces and then answer to the correspondent quiz (each blank space has it's own quiz). Drag & dropping the answers is possible in tablets & mobile devices too, however, to get the best experience, it's recommended that users access the application from a dekstop system. 
 
